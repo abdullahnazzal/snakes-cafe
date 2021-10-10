@@ -3,7 +3,7 @@
 
 print(
 """
-
+  
 **************************************
 **    Welcome to the Snakes Cafe!   **
 **    Please see our menu below.    **
