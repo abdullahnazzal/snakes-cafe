@@ -57,26 +57,28 @@ menu={
     "Tea": 0,
     "Unicorn Tears": 0
 }
+def customer_ordering():
 
-summary =0
-order = input("> ")
-while order != "quit" :
-    if order in menu:
-        menu[order]+=1
-        formatted_string = f"** {menu[order]} order of {order} have been added to your meal ** . Great choice!"
-        print(formatted_string)
-        # for k in menu.keys():
-        #     summary +=menu.get(k)
-        order = input("> ")
-    else:
-        print("Enter Again")
-        order = input("> ")
+    summary =0
+    order = input("> ")
+    while order != "quit" :
+        if order in menu:
+            menu[order]+=1
+            formatted_string = f"** {menu[order]} order of {order} have been added to your meal ** . Great choice!"
+            print(formatted_string)
+            # for k in menu.keys():
+            #     summary +=menu.get(k)
+            order = input("> ")
+        else:
+            print("Enter Again")
+            order = input("> ")
 
-for k in menu.keys():
-        summary +=menu.get(k)
+    for k in menu.keys():
+            summary +=menu.get(k)
 
-print(summary)
+    print(summary)
 
+customer_ordering()
 
 
     
