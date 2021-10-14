@@ -1,13 +1,13 @@
 # Snakes Cafe
-Number and name of feature: ________________________________
+Number and name of feature: ordering form menu for the restaurant
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hours
 
-Start time: _____
+Start time: 3:00
 
-Finish time: _____
+Finish time: 7:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: hours
 
 
-[Snakes Cafe Repo]("https://github.com/abdullahnazzal/snakes-cafe/tree/snakes_cafe")
+[Snakes Cafe Repo]("https://github.com/abdullahnazzal/snakes-cafe/pull/1")
