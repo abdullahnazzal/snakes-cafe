@@ -58,20 +58,23 @@ menu={
     "Unicorn Tears": 0
 }
 def customer_ordering():
-
+    """
+    command line utility which will mimic the functionality of a point of sale restaurant system using your basic Python tools and understanding of the basics of the language.
+    """
     summary =0
+    flag=True
     order = input("> ")
-    while order != "quit" :
-        if order in menu:
-            menu[order]+=1
-            formatted_string = f"** {menu[order]} order of {order} have been added to your meal ** . Great choice!"
-            print(formatted_string)
-            # for k in menu.keys():
-            #     summary +=menu.get(k)
-            order = input("> ")
+    while flag:
+        if order == "quit":
+            flag = False
+            break
         else:
-            print("Enter Again")
-            order = input("> ")
+            for i in menu:
+                if i.lower() == order.lower():
+                    menu[i]+=1
+                    formatted_string = f"** {menu[i]} order of {i} have been added to your meal ** . Great choice!"
+                    print(formatted_string)
+                    order = input("> ")
 
     for k in menu.keys():
             summary +=menu.get(k)
